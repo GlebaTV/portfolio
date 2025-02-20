@@ -1,23 +1,25 @@
 import ProjectCard from './ProjectCard';
 import styles from './ProjectList.module.css';
-
+import prj1 from '/assets/images/prj1.jpg';
+import prj2 from '/assets/images/prj2.jpg';
+import prj3 from '/assets/images/prj3.jpg';
 const projects = [
   {
     title: 'The Burger House website',
     description: 'Burger shop website with menu, promotions, ordering and easy navigation..',
-    imageUrl: '/portfolio/assets/images/prj1.jpg',
+    imageUrl: prj1,
     link: 'https://glebatv.github.io/Burger-site/'
   },
   {
     title: 'University',
     description: 'University site with information about the faculties, timetable, news and contacts.',
-    imageUrl: '/portfolio/assets/images/prj2.jpg',
+    imageUrl: prj2,
     link: 'https://glebatv.github.io/University/'
   },
   {
     title: 'Music Player',
     description: 'Music player site with playlists, track management and settings.',
-    imageUrl: '/portfolio/assets/images/prj3.jpg',
+    imageUrl: prj3,
     link: 'https://glebatv.github.io/Music-Player/'
   },
 ];
