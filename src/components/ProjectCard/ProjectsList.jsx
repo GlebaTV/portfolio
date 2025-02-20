@@ -6,19 +6,19 @@ const projects = [
   {
     title: 'The Burger House website',
     description: 'Burger shop website with menu, promotions, ordering and easy navigation..',
-    imageUrl: '../../images/prj1.JPG',
+    imageUrl: '/assets/images/prj1.jpg',
     link: 'https://glebatv.github.io/Burger-site/'
   },
   {
     title: 'University',
     description: 'University site with information about the faculties, timetable, news and contacts.',
-    imageUrl: '../../images/prj2.JPG',
+    imageUrl: '/assets/images/prj2.jpg',
     link: 'https://glebatv.github.io/University/'
   },
   {
     title: 'Music Player',
     description: 'Music player site with playlists, track management and settings.',
-    imageUrl: '../../images/prj3.JPG',
+    imageUrl: '/assets/images/prj3.jpg',
     link: 'https://glebatv.github.io/Music-Player/'
   },
 ];
