@@ -1,0 +1,160 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 100px;
+  
+}
+
+/* Левая часть (текст) */
+.left {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 10px 0;
+  font-size: 18px;
+  color: rgba(199, 199, 199, 1);
+}
+
+.email,
+.resume {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease-out;
+}
+
+.email:hover,
+.resume:hover {
+  text-decoration: underline;
+  color: rgba(211, 233, 122, 1);
+}
+
+/* Правая часть (Форма) */
+.form {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  color: rgba(199, 199, 199, 1);
+  
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-out;
+}
+
+.form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form button {
+  width: 140px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+  background-color: rgba(211, 233, 122, 1);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Manrope', sans-serif;
+}
+
+.form button:hover {
+  background: #5a5a5a;
+  color: #ffffff;
+}
+
+.form button:active {
+  background-color: #5a5a5a;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: rgba(211, 233, 122, 1);
+  outline: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(199, 199, 199, 0.7);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+  }
+
+  .left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .left h2 {
+    font-size: 50px;
+  }
+
+  .form {
+    max-width: 50%;
+    padding: 20px;
+  }
+
+  .form button {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .form button {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}

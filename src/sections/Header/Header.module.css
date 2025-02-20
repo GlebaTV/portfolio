@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  box-sizing: border-box;
+}
+
+.navText {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+  color: rgba(199, 199, 199, 1);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navLink {
+  display: flex;
+  gap: 40px;
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.navLink a {
+  font-weight: 400;
+  color: rgba(199, 199, 199, 1);
+  transition: color 0.3s ease-out, transform 0.3s ease-out;
+  position: relative;
+  text-decoration: none;
+}
+
+.navLink a:hover {
+  color: rgba(211, 233, 122, 1);
+  transform: scale(1.1);
+}
+
+.navLink a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: rgba(211, 233, 122, 1);
+  bottom: 1px;
+  left: 0;
+  transition: width 0.3s ease-out;
+}
+
+.navLink a:hover::after {
+  width: 100%;
+}
+
+/* Бургер-меню */
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: rgba(199, 199, 199, 1);
+  transition: all 0.3s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .navText {
+    font-size: 30px;
+  }
+
+  .navLink {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .navLink.open {
+    display: flex;
+  }
+
+  .navLink a {
+    font-size: 18px;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navText {
+    font-size: 24px;
+  }
+
+  .navLink {
+    top: 60px;
+    right: 10px;
+    padding: 15px;
+  }
+
+  .navLink a {
+    font-size: 16px;
+  }
+}

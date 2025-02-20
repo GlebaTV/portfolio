@@ -1,0 +1,35 @@
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 250px;
+  
+}
+
+/* 📱 Адаптация под мобильные устройства */
+@media (max-width: 1024px) {
+  .projectList {
+      gap: 30px;
+      padding: 30px;
+      padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectList {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      padding-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectList {
+      padding: 15px;
+      gap: 15px;
+      padding-top: 100px;
+  }
+}

@@ -1,0 +1,94 @@
+.projectCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.title {
+  margin: 16px 0 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  padding: 0 10px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: rgba(211, 233, 122, 1);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  font-family: 'Manrope', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #5a5a5a;
+  color: white;
+}
+
+/* 📱 Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+  .projectCard {
+      width: 80%;
+      padding: 12px;
+  }
+
+  .title {
+      font-size: 18px;
+  }
+
+  .description {
+      font-size: 14px;
+  }
+
+  .link {
+      padding: 6px 12px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+      width: 80%;
+      padding: 10px;
+  }
+
+  .title {
+      font-size: 16px;
+  }
+
+  .description {
+      font-size: 13px;
+  }
+
+  .link {
+      padding: 5px 10px;
+      font-size: 13px;
+  }
+}
