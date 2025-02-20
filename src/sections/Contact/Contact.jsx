@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
-  // Состояние для хранения значений полей
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,7 +9,6 @@ const Contact = () => {
     message: "",
   });
 
-  // Обработчик ввода
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -18,11 +16,11 @@ const Contact = () => {
     });
   };
 
-  // Обработчик отправки формы
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Предотвращает перезагрузку страницы
 
-    // Проверка, что все обязательные поля заполнены
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+
+   
     if (!formData.name || !formData.email || !formData.message) {
       alert("Пожалуйста, заполните все обязательные поля.");
       return;

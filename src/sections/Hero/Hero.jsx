@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import profilePage from '../../assets/images/img1.jpg'
+import profilePage from '../../images/img1.jpg'
 import { Link } from 'react-router-dom';
 
 

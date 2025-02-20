@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <nav className={styles.container}>
-      <Link to="/" className={styles.navText}>
+      <Link to="/portfolio" className={styles.navText}>
         PAVLOV GLEB
       </Link>
 
