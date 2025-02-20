@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Music Player',
     description: 'Music player site with playlists, track management and settings.',
-    imageUrl: `${import.meta.env.BASE_URL}assets/images/prj3git commit -m "Fixed image paths".jpg`,
+    imageUrl: `${import.meta.env.BASE_URL}assets/images/prj3git.jpg`,
     link: 'https://glebatv.github.io/Music-Player/'
   },
 ];
