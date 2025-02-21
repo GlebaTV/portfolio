@@ -1,8 +1,8 @@
 import ProjectCard from './ProjectCard';
 import styles from './ProjectList.module.css';
-import prj1 from '/assets/images/prj1.jpg';
-import prj2 from '/assets/images/prj2.jpg';
-import prj3 from '/assets/images/prj3.jpg';
+import prj1 from '/public/assets/images/prj1.jpg';
+import prj2 from '/public/assets/images/prj2.jpg';
+import prj3 from '/public/assets/images/prj3.jpg';
 const projects = [
   {
     title: 'The Burger House website',
