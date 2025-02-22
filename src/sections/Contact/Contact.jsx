@@ -44,7 +44,7 @@ const Contact = () => {
         </p>
         <p className={styles.text}>
           Дополнительная информация,{" "}
-          <a href={resumePdf} className={styles.resume} download="resume.pdf">
+          <a href={resumePdf} className={styles.resume} download="resume.pdf" type="application/pdf">
             мое резюме
           </a>
         </p>
