@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Contact.module.css";
+import resumePdf from "../../../public/resume.pdf"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const Contact = () => {
         </p>
         <p className={styles.text}>
           Дополнительная информация,{" "}
-          <a href="/public/resume.pdf" className={styles.resume} download>
+          <a href={resumePdf} className={styles.resume} download="resume.pdf">
             мое резюме
           </a>
         </p>
